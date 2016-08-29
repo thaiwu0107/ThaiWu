@@ -15,6 +15,18 @@
 ]]></content>
     </entry>
     
+    <entry>
+      <title><![CDATA[Hero相關記錄]]></title>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Hero%E7%9B%B8%E9%97%9C%E8%A8%98%E9%8C%84/</url>
+      <content type="html"><![CDATA[<p>快速部署發布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p>預覽<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>建立一篇新的文章。如果沒有設定 layout 的話，則會使用 _config.yml 中的 default_layout 設定代替。如果標題包含空格的話，請使用引號括起來。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure></p>
+<p><a href="https://hexo.io/zh-tw/docs/tag-plugins.html" target="_blank" rel="external">文章標籤</a><br>title: 標題<br>date: 時間自動產生<br>categories: 分類<br>tags: [tags,tags,tags]</p>
+<blockquote><p><a href="https://hexo.io/zh-tw/docs/tag-plugins.html" target="_blank" rel="external">https://hexo.io/zh-tw/docs/tag-plugins.html</a></p>
+</blockquote>
+]]></content>
+    </entry>
+    
   
   
 </search>
