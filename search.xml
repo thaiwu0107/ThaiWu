@@ -4,8 +4,19 @@
   
     
     <entry>
+      <title><![CDATA[Sikuli相關技術]]></title>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/30/Sikuli%E7%9B%B8%E9%97%9C%E6%8A%80%E8%A1%93/</url>
+      <content type="html"><![CDATA[<h3 id="什麼是Sikuli"><a href="#什麼是Sikuli" class="headerlink" title="什麼是Sikuli"></a>什麼是Sikuli</h3><p><a href="https://github.com/RaiMan/SikuliX2" target="_blank" rel="external">Sikuli</a> 是一種可視化技術，<br>它可以用來自動化的在一個圖形用戶界面（GUI）上進行操作和測試。<br>而Sikuli腳本就是實現這一過程的一種腳本語言。</p>
+<p>它通過截圖來識別需要操作的圖形界面組件<br>再通 Jython 來完成操作動作從而實現自動化的操作（或者測試）.<br>說得簡單一點<br>Sikuli就是能通過截圖幫助我們自動操作電腦的一種便利的方式。</p>
+<p>可以進入他的官網看他的<a href="http://sikulix.com/" target="_blank" rel="external">介紹</a></p>
+<p>使用有一個GUI介面可以方便你使用<br>而且是圖形化介面來編寫語言非常的簡單<br><img src="http://www.sikuli.org/uploads/1/3/6/8/13689586/_3229151.png" alt="可以利用圖形來寫程式"></p>
+<p>至於<strong>Android</strong>上如果要使用的話<br>就要另外再研究了<br>不過GitHub上有一個lib可以搜尋來試試看<br>至於要用這套寫出一個APP就要再研究了</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Android OCR技術記錄]]></title>
-      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/2016-08-29-Android-OCR%E6%8A%80%E8%A1%93%E8%A8%98%E9%8C%84/</url>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Android-OCR%E6%8A%80%E8%A1%93%E8%A8%98%E9%8C%84/</url>
       <content type="html"><![CDATA[<h2 id="什麼是OCR"><a href="#什麼是OCR" class="headerlink" title="什麼是OCR"></a>什麼是OCR</h2><p>OCR（全稱Optical Character Recognition），正式翻譯名為「光學字元識別」<br>講簡單點，它是可以辨識圖像上的文字，將之轉換為電子文字訊息</p>
 <p>##工具<br><a href="https://github.com/tesseract-ocr/tesseract" target="_blank" rel="external">tesseract</a>是非常有名的開源OCR工具<br>而<strong>Android</strong>版本則是要用<a href="https://github.com/rmtheis/tess-two" target="_blank" rel="external">tess-two</a><br><strong>Android</strong>要用就很簡單<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">dependencies &#123;</div><div class="line">    compile &apos;com.rmtheis:tess-two:6.0.4&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>即可下載部署到你的專案了<br>不過你還需要再下載<strong><em><a href="https://github.com/tesseract-ocr/tessdata" target="_blank" rel="external">語言包</a></em></strong><br>不需要全部下載,只要挑選你需要的語言就好了</p>
@@ -15,7 +26,7 @@
     
     <entry>
       <title><![CDATA[Hero相關記錄]]></title>
-      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/2016-08-29-Hero%E7%9B%B8%E9%97%9C%E8%A8%98%E9%8C%84/</url>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Hero%E7%9B%B8%E9%97%9C%E8%A8%98%E9%8C%84/</url>
       <content type="html"><![CDATA[<p>快速部署發布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
 <p>預覽<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
 <p>建立一篇新的文章。如果沒有設定 layout 的話，則會使用 _config.yml 中的 default_layout 設定代替。如果標題包含空格的話，請使用引號括起來。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure></p>
