@@ -4,6 +4,12 @@
   
     
     <entry>
+      <title><![CDATA[LibGDX初次使用]]></title>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/31/LibGDX%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[OpenCV相關]]></title>
       <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/30/OpenCV%E7%9B%B8%E9%97%9C/</url>
       <content type="html"><![CDATA[<h3 id="什麼是OpenCV"><a href="#什麼是OpenCV" class="headerlink" title="什麼是OpenCV"></a>什麼是OpenCV</h3><p>OpenCV(Open Source Computer Vision Library)是一個集合數百種演算法的跨平台電腦視覺庫。只要是針對影像做辨識、操作、分析等，不管是要做人臉辨識、物件辨識、車牌辨識、人形偵測、物件追蹤、影像壓縮、影像加密等各種影像處理，OpenCV確實是一個很好的輔助工具，目前已經可以在Windows、Linux、iOS及Android平台上使用，支援的程式語言有C/C++、Java、Python、Matlab、Ruby及C#等，已經是大部分影像處理使用者必備的涵式庫了。</p>
