@@ -6,7 +6,11 @@
     <entry>
       <title><![CDATA[Android OCR技術記錄]]></title>
       <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/2016-08-29-Android-OCR%E6%8A%80%E8%A1%93%E8%A8%98%E9%8C%84/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<h2 id="什麼是OCR"><a href="#什麼是OCR" class="headerlink" title="什麼是OCR"></a>什麼是OCR</h2><p>OCR（全稱Optical Character Recognition），正式翻譯名為「光學字元識別」<br>講簡單點，它是可以辨識圖像上的文字，將之轉換為電子文字訊息</p>
+<p>##工具<br><a href="https://github.com/tesseract-ocr/tesseract" target="_blank" rel="external">tesseract</a>是非常有名的開源OCR工具<br>而<strong>Android</strong>版本則是要用<a href="https://github.com/rmtheis/tess-two" target="_blank" rel="external">tess-two</a><br><strong>Android</strong>要用就很簡單<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">dependencies &#123;</div><div class="line">    compile &apos;com.rmtheis:tess-two:6.0.4&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>即可下載部署到你的專案了<br>不過你還需要再下載<strong><em><a href="https://github.com/tesseract-ocr/tessdata" target="_blank" rel="external">語言包</a></em></strong><br>不需要全部下載,只要挑選你需要的語言就好了</p>
+<p>至於開發重點與地雷就等之後再分享心得了</p>
+]]></content>
     </entry>
     
     <entry>
