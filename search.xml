@@ -68,7 +68,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Hero相關記錄]]></title>
+      <title><![CDATA[Hexo相關記錄]]></title>
       <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Hero%E7%9B%B8%E9%97%9C%E8%A8%98%E9%8C%84/</url>
       <content type="html"><![CDATA[<p>快速部署發布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
 <p>預覽<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
