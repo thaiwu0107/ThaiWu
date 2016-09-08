@@ -4,6 +4,21 @@
   
     
     <entry>
+      <title><![CDATA[Android drawable state設定]]></title>
+      <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/09/08/Android-drawable-state%E8%A8%AD%E5%AE%9A/</url>
+      <content type="html"><![CDATA[<p>###Android的drawable的state設定值###<br>通常我們會用Drawable的Xml來做一些顏色的設定變化<br>也會利用state來做狀態的判斷</p>
+<p>在我使用的經驗下<br><strong>系統會直接尋找第一個符合的狀態</strong><br>而每個狀態都只有true跟flase兩種判斷</p>
+<p>因此如果你要用到三種狀態判斷的情況下<br>就要同時用到兩個狀態去比對<br>也就是會變成四種狀態</p>
+<p>譬如說：</p>
+<pre><code>android:state_activated=&quot;true&quot;
+android:state_pressed=&quot;false&quot;
+</code></pre><p>這兩種狀態就有需要去補足剩下三種情況的組合<br>因為前面說過<strong>系統會直接尋找第一個符合的狀態</strong><br>所以如果直接用</p>
+<pre><code>android:state_pressed=&quot;false&quot;
+</code></pre><p>就會導致系統直接套用這個情況<br>必須要小心使用才行</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Java泛型的PECS原則]]></title>
       <url>https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/31/Java%E6%B3%9B%E5%9E%8B%E7%9A%84PECS%E5%8E%9F%E5%89%87/</url>
       <content type="html"><![CDATA[<p>##什麼是PECS##<br>生产者（Producer）使用extends<br>消费者（Consumer）使用super<br>兩句話就可以很好的解釋</p>

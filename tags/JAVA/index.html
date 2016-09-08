@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="z1MCqapGZLwAlUgupfS9Zefv9s7_juc7NH-VpbO_v8k" />
     <meta name="generator" content="ThaiWu&#39;筆記">
-    <title>標籤: JAVA - ThaiWu&#39;筆記</title>
+    <title>標籤: Java - ThaiWu&#39;筆記</title>
     <meta name="author" content="ThaiWu">
     
     
@@ -16,7 +16,7 @@
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="ThaiWu'筆記">
-<meta property="og:url" content="https://thaiwu0107.github.io/ThaiWu/tags/JAVA/index.html">
+<meta property="og:url" content="https://thaiwu0107.github.io/ThaiWu/tags/Java/index.html">
 <meta property="og:site_name" content="ThaiWu'筆記">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ThaiWu'筆記">
@@ -176,21 +176,21 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/ThaiWu/2016/08/31/Java泛型的PECS原則/">
-                            Java泛型的PECS原則
+                        <a class="link-unstyled" href="/ThaiWu/2016/09/08/Android-drawable-state設定/">
+                            Android drawable state設定
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-08-31T16:34:29+08:00">
+    <time itemprop="datePublished" datetime="2016-09-08T15:10:58+08:00">
 	
-		    8月 31, 2016
+		    9月 08, 2016
     	
     </time>
     
         <span>分類 </span>
         
-    <a class="category-link" href="/ThaiWu/categories/JAVA/">JAVA</a>
+    <a class="category-link" href="/ThaiWu/categories/Android/">Android</a>
 
 
     
@@ -199,16 +199,22 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <p>##什麼是PECS##<br>生产者（Producer）使用extends<br>消费者（Consumer）使用super<br>兩句話就可以很好的解釋</p>
-<p>##JAVA##<br>PECS原则<br>(Producer Extends)<br>如果要从集合中读取类型T的数据，并且不能写入，可以使用 ? extends 通配符<br>(Consumer Super)<br>如果要从集合中写入类型T的数据，并且不需要读取，可以使用 ? super 通配符</p>
-<p>如果既要存又要取，那么就不要使用任何通配符。</p>
+                    <p>###Android的drawable的state設定值###<br>通常我們會用Drawable的Xml來做一些顏色的設定變化<br>也會利用state來做狀態的判斷</p>
+<p>在我使用的經驗下<br><strong>系統會直接尋找第一個符合的狀態</strong><br>而每個狀態都只有true跟flase兩種判斷</p>
+<p>因此如果你要用到三種狀態判斷的情況下<br>就要同時用到兩個狀態去比對<br>也就是會變成四種狀態</p>
+<p>譬如說：</p>
+<pre><code>android:state_activated=&quot;true&quot;
+android:state_pressed=&quot;false&quot;
+</code></pre><p>這兩種狀態就有需要去補足剩下三種情況的組合<br>因為前面說過<strong>系統會直接尋找第一個符合的狀態</strong><br>所以如果直接用</p>
+<pre><code>android:state_pressed=&quot;false&quot;
+</code></pre><p>就會導致系統直接套用這個情況<br>必須要小心使用才行</p>
 
                     
                         
                     
                     
                         <p>
-                            <a href="/ThaiWu/2016/08/31/Java泛型的PECS原則/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/ThaiWu/2016/09/08/Android-drawable-state設定/#post-footer" class="postShorten-excerpt_link link">
                                 留言與分享
                             </a>
                         </p>
@@ -219,184 +225,235 @@
         
     </article>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/ThaiWu/2016/08/31/LibGDX初次使用/">
-                            LibGDX初次使用
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-08-31T02:11:52+08:00">
-	
-		    8月 31, 2016
-    	
-    </time>
-    
-        <span>分類 </span>
+    <div class="pagination-bar">
+    <ul class="pagination">
         
-    <a class="category-link" href="/ThaiWu/categories/遊戲製作/">遊戲製作</a>
-
-
-    
+        
+        <li class="pagination-number">第 1 頁 共 1 頁</li>
+    </ul>
 </div>
 
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>這次利用<strong><em><a href="https://libgdx.badlogicgames.com/download.html" target="_blank" rel="external">LibGDX</a></em></strong>來製作遊戲<br>點連結可以直接去官網下載製作架構的生產器<br>這是一個跨平台的遊戲框架</p>
-<p>基礎是用<strong><em><a href="https://www.lwjgl.org/guide" target="_blank" rel="external">LWJGL</a></em></strong>來架構的框架<br>如果你想用JAVA來寫遊戲可以直接用LWJGL來寫<br>它幫你封裝好以下四大類</p>
-<ul>
-<li>GLFW</li>
-<li>OpenGL</li>
-<li>OpenCL</li>
-<li>OpenAL<br>可以直接用JAVA來編譯不需要用C/C++來寫遊戲</li>
-</ul>
-<hr>
-<p>LibGDX則是再進一步封裝好各平台的一個框架<br>一開始我只打算先用Android來寫<br>目前是用Firebase來試做一款多人連線遊戲<br>一開始還在想要用什麼來當伺服器<br>還有去研究過<strong><em><a href="https://github.com/EsotericSoftware/kryonet/releases" target="_blank" rel="external">Kryonet</a></em></strong></p>
-<p>本來打算自己架一台JAVA伺服器的後來覺得可能會遇到非固定ＩＰ等等問題所以還是放棄以後再研究<br>還是乖乖使用Firebase吧</p>
-<hr>
-<p>過程中我一直在想怎麼利用Firebase來做多人連線<br>畢竟他主要是支援Android但是LibGDX生出來的架構<br>主要邏輯在core裡面</p>
-<p>後來找到一篇<strong><em><a href="https://chandruscm.wordpress.com/2015/12/30/how-to-setup-google-play-game-services-in-libgdx-using-android-studio/" target="_blank" rel="external">文章</a></em></strong><br>才覺得自己蠢,其實就像他說的只要把<strong>reference</strong>傳過去就好<br>真的是第一次接觸都忘記了</p>
-<p>看來一直寫Android也不是很好<br>還是要多接觸一點不一樣的東西才行啊</p>
+</section>
 
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/ThaiWu/2016/08/31/LibGDX初次使用/#post-footer" class="postShorten-excerpt_link link">
-                                留言與分享
-                            </a>
-                        </p>
-                    
-                </div>
+
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<footer id="footer" class="main-content-wrap">
+<span id="busuanzi_value_page_pv">目前<i class="fa fa-spinner fa-spin"></i></span> 瀏覽人數
+<br>
+</br>
+    <span class="copyrights">
+        Copyrights &copy; 2016 ThaiWu. All Rights Reserved.
+    </span>
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</footer>
+
+            </div>
             
         </div>
         
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/ThaiWu/2016/08/30/OpenCV相關/">
-                            OpenCV相關
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-08-30T12:13:59+08:00">
-	
-		    8月 30, 2016
-    	
-    </time>
-    
-        <span>分類 </span>
-        
-    <a class="category-link" href="/ThaiWu/categories/OpenCV/">OpenCV</a>
 
 
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <h3 id="什麼是OpenCV"><a href="#什麼是OpenCV" class="headerlink" title="什麼是OpenCV"></a>什麼是OpenCV</h3><p>OpenCV(Open Source Computer Vision Library)是一個集合數百種演算法的跨平台電腦視覺庫。只要是針對影像做辨識、操作、分析等，不管是要做人臉辨識、物件辨識、車牌辨識、人形偵測、物件追蹤、影像壓縮、影像加密等各種影像處理，OpenCV確實是一個很好的輔助工具，目前已經可以在Windows、Linux、iOS及Android平台上使用，支援的程式語言有C/C++、Java、Python、Matlab、Ruby及C#等，已經是大部分影像處理使用者必備的涵式庫了。</p>
-<h3 id="模組-Module"><a href="#模組-Module" class="headerlink" title="模組 (Module)"></a>模組 (Module)</h3><p>####Main</p>
-<ul>
-<li>core. 基本資料結構的緊湊模組，包含操作影像像素及1.0與2.0版本格式交換</li>
-<li>imgproc. 影像處理模組，包含線性與非線性的影像濾波器及幾何影像的轉換(影像縮放翻轉、色彩空間轉換和直方圖操作等)</li>
-<li>imgcodecs. 影像格式編碼、解碼及影像存取</li>
-<li>videoio. 攝影機操作</li>
-<li>highgui. 提供簡易的視窗介面及鍵盤與滑鼠操作</li>
-<li>video. 物件追蹤、背景相減及移動方向預估等</li>
-<li>calib3d. 多視角幾何演算法，影像校正、3D物件重建及姿態估測等</li>
-<li>features2d. 特徵擷取及特徵描述</li>
-<li>objdetect. 物件偵測，如人臉偵測、眼睛偵測、嘴巴偵測、鼻子偵測及身形偵測等</li>
-<li>ml. 機器學習演算法，如KNN、貝式機率分類器、SVM等</li>
-<li>flann. 實現FLANN演算法</li>
-<li>photo. 影像去雜訊、HDR</li>
-<li>stitching. 影像合成相關技術</li>
-<li>cudaarithm. 使用CUDA資料結構操作</li>
-<li>cudabgsegm. 使用CUDA的背景相減MOG</li>
-<li>cudacodec. 使用CUDA的影片存取讀取</li>
-<li>cudafeatures2d. 使用CUDA實現部分特徵擷取技術</li>
-</ul>
-<p>####Extra</p>
-<ul>
-<li>aruco. ArUco Marker Detection</li>
-<li>bgsegm. Improved Background-Foreground Segmentation Methods</li>
-<li>bioinspired. Biologically inspired vision models and derivated tools</li>
-<li>ccalib. Custom Calibration Pattern for 3D reconstruction</li>
-<li>cvv. GUI for Interactive Visual Debugging of Computer Vision Programs</li>
-<li>datasets. Framework for working with different datasets</li>
-<li>dnn. Deep Neural Network module</li>
-<li>dpm. Deformable Part-based Models</li>
-<li>face. Face Recognition</li>
-<li>fuzzy. Image processing based on fuzzy mathematics</li>
-</ul>
-<h3 id="Android使用"><a href="#Android使用" class="headerlink" title="Android使用"></a>Android使用</h3><p><strong><a href="https://sourceforge.net/projects/opencvlibrary/files/opencv-android/" target="_blank" rel="external">Android</a></strong>可以直接去這裡下載來使用<br><strong><a href="https://github.com/bytedeco/javacv" target="_blank" rel="external">JAVA</a></strong>純JAVA版本就可以引用這個庫來使用</p>
-<p>使用心得與想法當然也是等到我真的有想做外掛的時候再分享囉<br>其實會紀錄這幾個有外掛的標籤都是當初朋友想叫我寫一個Android上面可以用的外掛APP</p>
-<p>所以才去研究的不過研究到一個程度發現幾乎還是用<strong>ROOT</strong>手機才可以對Android環境直接下Shell指令才能做一些動作</p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/ThaiWu/2016/08/30/OpenCV相關/#post-footer" class="postShorten-excerpt_link link">
-                                留言與分享
-                            </a>
-                        </p>
-                    
-                </div>
-            
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
         </div>
         
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/ThaiWu/2016/08/30/Sikuli相關技術/">
-                            Sikuli相關技術
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-08-30T11:56:11+08:00">
-	
-		    8月 30, 2016
-    	
-    </time>
-    
-        <span>分類 </span>
+            <h4 id="about-card-name">ThaiWu</h4>
         
-    <a class="category-link" href="/ThaiWu/categories/Sikuli/">Sikuli</a>
-
-
-    
+            <div id="about-card-bio"><p>author.bio</p>
 </div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
 
             </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <h3 id="什麼是Sikuli"><a href="#什麼是Sikuli" class="headerlink" title="什麼是Sikuli"></a>什麼是Sikuli</h3><p><a href="https://github.com/RaiMan/SikuliX2" target="_blank" rel="external">Sikuli</a> 是一種可視化技術，<br>它可以用來自動化的在一個圖形用戶界面（GUI）上進行操作和測試。<br>而Sikuli腳本就是實現這一過程的一種腳本語言。</p>
-<p>它通過截圖來識別需要操作的圖形界面組件<br>再通 Jython 來完成操作動作從而實現自動化的操作（或者測試）.<br>說得簡單一點<br>Sikuli就是能通過截圖幫助我們自動操作電腦的一種便利的方式。</p>
+        
+        
+    </div>
+</div>
+
+        <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    autofocus="autofocus"/>
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">沒有找到文章</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Hero相關記錄/">
+                            <h3 class="media-heading">Hexo相關記錄</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月29日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/29/Android-OCR技術記錄/">
+                            <h3 class="media-heading">Android OCR技術記錄</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月29日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/30/Sikuli相關技術/">
+                            <h3 class="media-heading">Sikuli相關技術</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月30日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/30/OpenCV相關/">
+                            <h3 class="media-heading">OpenCV相關</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月30日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/31/LibGDX初次使用/">
+                            <h3 class="media-heading">LibGDX初次使用</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月31日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/08/31/Java泛型的PECS原則/">
+                            <h3 class="media-heading">Java泛型的PECS原則</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年8月31日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/09/08/Android-drawable-state設定/">
+                            <h3 class="media-heading">Android drawable state設定</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年9月8日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="沒有找到文章"
+                data-message-one="找到 1 篇文章"
+                data-message-other="找到 {n} 篇文章">
+                找到 7 篇文章
+            </p>
+        </div>
+    </div>
+</div>
+        
+<div id="cover" style="background-image:url('/ThaiWu/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/ThaiWu/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
+<!--SCRIPTS END-->
+
+
+
+    </body>
+</html>
+��幫助我們自動操作電腦的一種便利的方式。</p>
 <p>可以進入他的官網看他的<a href="http://sikulix.com/" target="_blank" rel="external">介紹</a></p>
 <p>使用有一個GUI介面可以方便你使用<br>而且是圖形化介面來編寫語言非常的簡單<br><img src="http://www.sikuli.org/uploads/1/3/6/8/13689586/_3229151.png" alt="可以利用圖形來寫程式"></p>
 <p>至於<strong>Android</strong>上如果要使用的話<br>就要另外再研究了<br>不過GitHub上有一個lib可以搜尋來試試看<br>至於要用這套寫出一個APP就要再研究了</p>
@@ -655,6 +712,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://thaiwu0107.github.io/ThaiWu/ThaiWu/2016/09/08/Android-drawable-state設定/">
+                            <h3 class="media-heading">Android drawable state設定</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年9月8日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -662,7 +738,7 @@
                 data-message-zero="沒有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 6 篇文章
+                找到 7 篇文章
             </p>
         </div>
     </div>

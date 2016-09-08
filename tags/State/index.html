@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="z1MCqapGZLwAlUgupfS9Zefv9s7_juc7NH-VpbO_v8k" />
     <meta name="generator" content="ThaiWu&#39;筆記">
-    <title>標籤: LibGDX - ThaiWu&#39;筆記</title>
+    <title>標籤: State - ThaiWu&#39;筆記</title>
     <meta name="author" content="ThaiWu">
     
     
@@ -16,7 +16,7 @@
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="ThaiWu'筆記">
-<meta property="og:url" content="https://thaiwu0107.github.io/ThaiWu/tags/LibGDX/index.html">
+<meta property="og:url" content="https://thaiwu0107.github.io/ThaiWu/tags/State/index.html">
 <meta property="og:site_name" content="ThaiWu'筆記">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ThaiWu'筆記">
@@ -176,21 +176,21 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/ThaiWu/2016/08/31/LibGDX初次使用/">
-                            LibGDX初次使用
+                        <a class="link-unstyled" href="/ThaiWu/2016/09/08/Android-drawable-state設定/">
+                            Android drawable state設定
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-08-31T02:11:52+08:00">
+    <time itemprop="datePublished" datetime="2016-09-08T15:10:58+08:00">
 	
-		    8月 31, 2016
+		    9月 08, 2016
     	
     </time>
     
         <span>分類 </span>
         
-    <a class="category-link" href="/ThaiWu/categories/遊戲製作/">遊戲製作</a>
+    <a class="category-link" href="/ThaiWu/categories/Android/">Android</a>
 
 
     
@@ -199,28 +199,22 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <p>這次利用<strong><em><a href="https://libgdx.badlogicgames.com/download.html" target="_blank" rel="external">LibGDX</a></em></strong>來製作遊戲<br>點連結可以直接去官網下載製作架構的生產器<br>這是一個跨平台的遊戲框架</p>
-<p>基礎是用<strong><em><a href="https://www.lwjgl.org/guide" target="_blank" rel="external">LWJGL</a></em></strong>來架構的框架<br>如果你想用JAVA來寫遊戲可以直接用LWJGL來寫<br>它幫你封裝好以下四大類</p>
-<ul>
-<li>GLFW</li>
-<li>OpenGL</li>
-<li>OpenCL</li>
-<li>OpenAL<br>可以直接用JAVA來編譯不需要用C/C++來寫遊戲</li>
-</ul>
-<hr>
-<p>LibGDX則是再進一步封裝好各平台的一個框架<br>一開始我只打算先用Android來寫<br>目前是用Firebase來試做一款多人連線遊戲<br>一開始還在想要用什麼來當伺服器<br>還有去研究過<strong><em><a href="https://github.com/EsotericSoftware/kryonet/releases" target="_blank" rel="external">Kryonet</a></em></strong></p>
-<p>本來打算自己架一台JAVA伺服器的後來覺得可能會遇到非固定ＩＰ等等問題所以還是放棄以後再研究<br>還是乖乖使用Firebase吧</p>
-<hr>
-<p>過程中我一直在想怎麼利用Firebase來做多人連線<br>畢竟他主要是支援Android但是LibGDX生出來的架構<br>主要邏輯在core裡面</p>
-<p>後來找到一篇<strong><em><a href="https://chandruscm.wordpress.com/2015/12/30/how-to-setup-google-play-game-services-in-libgdx-using-android-studio/" target="_blank" rel="external">文章</a></em></strong><br>才覺得自己蠢,其實就像他說的只要把<strong>reference</strong>傳過去就好<br>真的是第一次接觸都忘記了</p>
-<p>看來一直寫Android也不是很好<br>還是要多接觸一點不一樣的東西才行啊</p>
+                    <p>###Android的drawable的state設定值###<br>通常我們會用Drawable的Xml來做一些顏色的設定變化<br>也會利用state來做狀態的判斷</p>
+<p>在我使用的經驗下<br><strong>系統會直接尋找第一個符合的狀態</strong><br>而每個狀態都只有true跟flase兩種判斷</p>
+<p>因此如果你要用到三種狀態判斷的情況下<br>就要同時用到兩個狀態去比對<br>也就是會變成四種狀態</p>
+<p>譬如說：</p>
+<pre><code>android:state_activated=&quot;true&quot;
+android:state_pressed=&quot;false&quot;
+</code></pre><p>這兩種狀態就有需要去補足剩下三種情況的組合<br>因為前面說過<strong>系統會直接尋找第一個符合的狀態</strong><br>所以如果直接用</p>
+<pre><code>android:state_pressed=&quot;false&quot;
+</code></pre><p>就會導致系統直接套用這個情況<br>必須要小心使用才行</p>
 
                     
                         
                     
                     
                         <p>
-                            <a href="/ThaiWu/2016/08/31/LibGDX初次使用/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/ThaiWu/2016/09/08/Android-drawable-state設定/#post-footer" class="postShorten-excerpt_link link">
                                 留言與分享
                             </a>
                         </p>
